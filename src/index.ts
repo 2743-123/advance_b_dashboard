@@ -6,13 +6,21 @@ import sequelize from './config/database';
 import adminRoutes from './routes/adminRoutes'
 import superadminRoutes from './routes/superadminRoutes'
 import { authMiddleware } from './middlewares/authMiddleware';
-
+import bodyParser from 'body-parser';
+import cors from 'cors';
 
 dotenv.config();
 
 
 const app = express();
+app.use(cors());
+
 app.use(express.json()); // Middleware to parse JSON
+app.use(bodyParser.json());
+
+app.get('api/', (req, res) => {
+  res.send('Hello, World!');
+});
 
 app.use('/api/auth', authRoutes); // Use auth routes
 app.use('/api/admin',adminRoutes)
