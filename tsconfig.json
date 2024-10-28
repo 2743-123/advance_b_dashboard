@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    
     "target": "esnext",                         // Latest JavaScript features
     "module": "commonjs",                       // Module system (commonjs for Node.js)
     "lib": ["esnext", "dom","ES6"],                  // Libraries to include
@@ -18,15 +19,15 @@
     "esModuleInterop": true,                    // Enable emit interoperability between CommonJS and ES Modules
     "forceConsistentCasingInFileNames": true,  // Disallow inconsistently-cased references to the same file
     "outDir": "./dist",                         // Redirect output structure to the 'dist' directory
-    "rootDir": "./src",                         // Specify the root directory of input files
+    "rootDir": "./api",                         // Specify the root directory of input files
     "skipLibCheck": true,                       // Skip type checking of declaration files
     "resolveJsonModule": true,                  // Allow importing JSON files
-    "typeRoots" : ["./src/types", "./node_modules/@types"],
+    "typeRoots" : ["./api/types", "./node_modules/@types"],
     "types": ["node", "express"],
     "noFallthroughCasesInSwitch": true,          // Ensure all switch cases are handled
   },
  
-  "include": ["src/**/*"] ,                 // Files to include in compilation
+  "include": ["api/**/*"] ,                 // Files to include in compilation
   "exclude": ["node_modules", "dist"],         // Files to exclude from compilation
   "references": []                         // Project references for monorepo or composite projects
  
