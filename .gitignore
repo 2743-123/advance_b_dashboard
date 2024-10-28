@@ -53,3 +53,4 @@ swagger.yaml
 docker-compose.yml
 Dockerfile
 .dockerignore
+.vercel
