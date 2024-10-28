@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json()); // Middleware to parse JSON
 app.use(bodyParser.json());
 
-app.get('api/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hello, World!');
 });
 
