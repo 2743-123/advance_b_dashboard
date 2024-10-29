@@ -1,11 +1,11 @@
 import express from 'express';
 import authRoutes from "./routes/authRoutes" 
 import dotenv from 'dotenv';
-import Users from './models/User';
+// import Users from './models/User';
 import sequelize from './config/database';
 import adminRoutes from './routes/adminRoutes'
 import superadminRoutes from './routes/superadminRoutes'
-import { authMiddleware } from './middlewares/authMiddleware';
+// import { authMiddleware } from './middlewares/authMiddleware';
 import bodyParser from 'body-parser';
 // import cors from 'cors';
 import path from 'path';
