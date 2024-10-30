@@ -12,6 +12,7 @@ import path from 'path';
 
 require('dotenv').config();
 
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 // app.use(cors());
@@ -30,7 +31,7 @@ app.use('/api/admin',adminRoutes)
 app.use('/api/superadmin',superadminRoutes)
 
 
-const PORT = process.env.PORT || 3000;
+
 
 sequelize.sync({ force: false }) // Set force: true to recreate tables (caution: this will drop existing data)
   .then(() => {
