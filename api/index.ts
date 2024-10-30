@@ -1,4 +1,4 @@
-import express from 'express';
+import express,{Request,Response} from 'express';
 import authRoutes from './routes/authRoutes';
 import dotenv from 'dotenv';
 import sequelize from './config/database';
@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json()); // Middleware to parse JSON
 // app.use(bodyParser.json()); // Not needed if using express.json()
 
-app.get('/api', (req, res) => {
+app.get('/api', (req:Request, res: Response) => {
   res.send('Hello from Express server on Vercel!');
 });
 
