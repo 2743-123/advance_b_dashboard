@@ -11,7 +11,7 @@ import path from 'path';
 
 dotenv.config(); // Correct way to configure dotenv
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 // app.use(cors()); // Uncomment if you want to use CORS
@@ -43,4 +43,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-export default app; // Prefer this for ES module export
+module.exports=app;; // Prefer this for ES module export
