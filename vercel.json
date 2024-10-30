@@ -4,14 +4,12 @@
     { "src": "api/index.ts", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/dist/index.js" }
+    { "src": "/(.*)", "dest": "api/index.ts" }
   ],
-  "build": {
-    "env": {
-      "DB_USER": "akram",
-      "DB_PASSWORD": "As2743@",
-      "DB_NAME": "akram",
-      "DB_HOST": "localhost"
-    }
+  "env": {
+    "DB_USER": "akram",
+    "DB_PASSWORD": "As2743@",
+    "DB_NAME": "akram",
+    "DB_HOST": "localhost"
   }
 }
