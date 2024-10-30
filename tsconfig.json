@@ -19,7 +19,7 @@
     "esModuleInterop": true,                    // Enable emit interoperability between CommonJS and ES Modules
     "forceConsistentCasingInFileNames": true,  // Disallow inconsistently-cased references to the same file
     "outDir": "./dist",                         // Redirect output structure to the 'dist' directory
-    "rootDir": "./api",                         // Specify the root directory of input files
+    // "rootDir": "./api",                         // Specify the root directory of input files
     "skipLibCheck": true,                       // Skip type checking of declaration files
     "resolveJsonModule": true,                  // Allow importing JSON files
     "typeRoots" : ["./api/types", "./node_modules/@types"],
