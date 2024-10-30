@@ -10,7 +10,7 @@ import bodyParser from 'body-parser';
 // import cors from 'cors';
 import path from 'path';
 
-dotenv.config();
+require('dotenv').config();
 
 
 const app = express();
@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname, '../public')))
 app.use(express.json()); // Middleware to parse JSON
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
+app.get('/api', (req, res) => {
+  res.send('Hello from Express server on Vercel!');
 });
 
 app.use('/api/auth', authRoutes); // Use auth routes
