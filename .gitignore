@@ -4,12 +4,12 @@ node_modules/
 # Environment variable files, because they contain sensitive information
 .env
 
-# Logs (if any)
-logs/
-*.log
+# # Logs (if any)
+# logs/
+# *.log
 
-# Vercel build folder (if generated during the process)
-.vercel/
+# # Vercel build folder (if generated during the process)
+# .vercel/
 
 # Cache files
 .cache/
